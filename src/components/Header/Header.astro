@@ -1,0 +1,23 @@
+---
+import "./styles.css";
+const pathname = new URL(Astro.request.url).pathname;
+const current_path = pathname.slice(1);
+---
+
+<header class="flex justify-between max-w-7xl mx-auto px-16 py-4 max-sm:px-6">
+  <a href="/">
+    <img src="/logo_1.png" alt="logo" class="logo" />
+  </a>
+  <ul class="flex justify-between space-x-6 nav-links">
+    <li class:list={["flex justify-center items-center", `${current_path === "" ? 'active': 'anim-hover-white'}`]}>
+      <a href="/">Home</a>
+    </li>
+    <!-- <li class:list={["flex justify-center items-center", `${current_path === "blog" ? 'active': 'anim-hover-white'}`]}>
+      <a href="/blog">Blog</a>
+    </li> -->
+    <li class:list={["flex justify-center items-center anim-hover-white"]}>
+      <!--<a href="/" download="Resume">Resume</a>-->
+      <a href="/" >Resume</a>
+    </li>
+  </ul>
+</header>

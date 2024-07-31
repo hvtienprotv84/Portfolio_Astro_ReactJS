@@ -1,0 +1,15 @@
+---
+import { type CollectionEntry } from "astro:content";
+import { formatBlogPosts } from "../../utils/utils";
+import Post from "./Post.astro";
+type Props = {
+  posts: CollectionEntry<"posts">[];
+  max_posts?: number;
+};
+const { posts, max_posts } = Astro.props;
+const formatted_blog_posts = formatBlogPosts(posts, {sort_by_date: true, limit: max_posts});
+---
+
+<div class="grid grid-cols-3 max-sm:grid-cols-1 gap-6 mb-24 cards">
+  {formatted_blog_posts.map((post) => <Post post={post} />)}
+</div>

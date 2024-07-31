@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import user_profile from "../../../public/images/user_profile.png";
+import "./styles.css";
+---
+
+<section
+  class="flex justify-between items-center min-h-[800px] max-sm:flex-col-reverse max-sm:pb-24"
+>
+  <div class="w-1/2 my-auto max-sm:w-full">
+    <h2>Huỳnh Vĩnh Tiến</h2>
+    <div class="flex flex-row">
+      <p class="px-1 pt-0">Software Engineer • Việt Nam</p>
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/338px-Flag_of_Vietnam.svg.png"
+        alt=""
+        width={40}
+        height={40}
+        class=""
+      />
+    </div>
+    <div class="flex gap-3 pb-2 pt-4 px-1">
+      <a
+        href="/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h5 class="hover-highlight">facebook</h5>
+      </a>|
+      <a
+        href="/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h5 class="hover-highlight">github</h5>
+      </a>|
+      <a
+        href="/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h5 class="hover-highlight">zalo</h5>
+      </a>|
+      <a
+        href="/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h5 class="hover-highlight">twitter</h5>
+      </a> |
+      <a
+        href="/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h5 class="hover-highlight">linkedin</h5>
+      </a>
+    </div>
+  </div>
+  <div class="hero-profile min-w-[400px] min-h-[800px] max-sm:min-h-[600px]">
+    <Image
+      src="https://png.pngtree.com/png-clipart/20240615/original/pngtree-illustration-of-a-man-with-laptop-png-image_15339205.png"
+      alt=""
+      width={400}
+      height={400}
+      class="hero-profile-img absolute top-[20%] right-[0px] z-10"
+    />
+    <div
+      class="hero-circle-card absolute card-green rounded-full top-[25%] left-[0px] z-20"
+    >
+    </div>
+    <div
+      class="hero-circle-card absolute rounded-full bottom-[30%] right-[0px] max-sm:bottom-[15%] z-20"
+    >
+    </div>
+  </div>
+</section>

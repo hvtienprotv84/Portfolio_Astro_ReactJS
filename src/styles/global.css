@@ -1,0 +1,154 @@
+:root {
+  --accent-color: #b4ff39;
+  --text-default: #ddddddd7;
+  --text-disabled: #adadad8e;
+  --card-color: rgba(23, 23, 23, 0.95);
+  --card-color-hover: rgba(41, 41, 41, 0.95);
+}
+
+html {
+  color: #f7f7f7;
+  font-family: "IBM Plex Mono";
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.02) 1.5px,
+      transparent 1.5px
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.02) 1.5px,
+      transparent 1.5px
+    );
+  background-size: 100px 100px;
+  background-color: #030303;
+}
+
+blockquote {
+  border-left-color: var(--accent-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+u {
+  color: #ffffffec !important;
+}
+
+h2,
+h3,
+h4,
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 56px !important;
+  font-weight: 400 !important;
+}
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  color: var(--text-default) !important;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "IBM Plex Sans", "sans-serif";
+}
+
+p,
+li {
+  line-height: 1.4;
+}
+
+tr,
+thead,
+hr {
+  border-color: #292929 !important;
+}
+
+pre {
+  background-color: #0f0f0f !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.divider {
+  width: 100%;
+  height: 0.25px;
+  background-color: #f7f7f748;
+}
+
+::selection {
+  color: #0f0913;
+  background: var(--accent-color);
+}
+::-moz-selection {
+  color: #0f0913;
+  background: var(--accent-color);
+}
+
+.anim-hover-white {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.anim-hover-white:hover {
+  color: white;
+  opacity: 1;
+}
+
+.hover-highlight {
+  transition: color 0.2s ease-in-out;
+}
+.hover-highlight:hover {
+  color: var(--accent-color) !important;
+}
+
+.image-noise-wrapper {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-noise {
+  background-image: url(/public/images/other/noise.png);
+  background-position: 0 0;
+  background-size: 200px;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.project-list{
+  background-color: #111111;
+  border: 1px solid #f7f7f723;
+  border-radius: 8px;
+}
+
+.tag{
+  background-color: rgba(82, 82, 82, 0.4);
+  font-size: 14px;
+  color: #cdcdcd;
+}
+
+.anim-hover-accent {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.anim-hover-accent:hover {
+  color: var(--accent-color);
+  opacity: 1;
+}
