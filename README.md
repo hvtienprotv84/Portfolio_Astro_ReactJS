@@ -3,6 +3,7 @@
 - ReactJS
 - TypeScript
 - Tailwind CSS
+- Responsive Website và Mobile
 
 # RUN
 - `npm install`
