@@ -7,7 +7,7 @@
 </div>    
  
 - Astro
-- ReactJS
+- ReactJS 
 - TypeScript
 - Tailwind CSS
 - Responsive Website và Mobile
