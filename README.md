@@ -13,5 +13,5 @@
 - Responsive Website và Mobile
 
 # RUN
-- `npm install`
+- `npm install` 
 - `npm run dev`
