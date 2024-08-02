@@ -6,7 +6,7 @@
   <h1>Portfolio Astro - ReactJS</h1> 
 </div>     
  
-- Astro
+- Astro 
 - ReactJS 
 - TypeScript
 - Tailwind CSS
